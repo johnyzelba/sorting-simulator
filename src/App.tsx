@@ -53,6 +53,10 @@ export class App extends Component<Props, State> {
           generateNewItems={this.state.generateNewItems}
           onSimulationEnded={() => { this.setState({ startSimulator: false }) }}
         />
+        <div className="footer">
+          Made by <a href="https://www.linkedin.com/in/jonathan-zelba-273550163/" target="_blank" rel="noreferrer">Jonathan Zelba</a>
+          , view project's <a href="https://github.com/johnyzelba/sorting-simulator" target="_blank" rel="noreferrer">git</a>.
+        </div>
       </div>
     )
   }
