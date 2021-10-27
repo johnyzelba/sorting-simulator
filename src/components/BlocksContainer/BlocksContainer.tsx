@@ -396,8 +396,9 @@ export class BlocksContainer extends Component<Props, State> {
                     zIndex: 1,
                     left: 0,
                     transform: `translateX(${(this.blocksContainer.current.offsetWidth / this.state.numOfBlocks) * (this.state.markedIndex)}px)`,
-                    backgroundColor: '#f1f2f3',
-                    transition: `${(this.state.scanSpeed) / 1000}s ease-in-out`
+                    backgroundColor: '#cccccc',
+                    transition: `${(this.state.scanSpeed) / 1000}s ease-in-out`,
+                    boxShadow: `0 5px 25px rgb(0 0 0 / 20%)`
                   }
                 }
               />
@@ -412,8 +413,9 @@ export class BlocksContainer extends Component<Props, State> {
                     zIndex: 1,
                     left: 0,
                     transform: `translateX(${(this.blocksContainer.current.offsetWidth / this.state.numOfBlocks) * (this.state.markedIndex + 1)}px)`,
-                    backgroundColor: '#f1f2f3',
-                    transition: `${(this.state.scanSpeed) / 1000}s ease-in-out`
+                    backgroundColor: '#cccccc',
+                    transition: `${(this.state.scanSpeed) / 1000}s ease-in-out`,
+                    boxShadow: `0 5px 25px rgb(0 0 0 / 20%)`
                   }
                 }
               />
@@ -428,8 +430,9 @@ export class BlocksContainer extends Component<Props, State> {
                     zIndex: 1,
                     left: 0,
                     transform: `translateX(${(this.blocksContainer.current.offsetWidth / this.state.numOfBlocks) * (this.state.markedSecondIndex)}px)`,
-                    backgroundColor: '#f1f2f3',
-                    transition: `${(this.state.scanSpeed) / 1000}s ease-in-out`
+                    backgroundColor: '#cccccc',
+                    transition: `${(this.state.scanSpeed) / 1000}s ease-in-out`,
+                    boxShadow: `0 5px 25px rgb(0 0 0 / 20%)`
                   }
                 }
               />
@@ -451,8 +454,9 @@ export class BlocksContainer extends Component<Props, State> {
                             zIndex: 1,
                             left: 0,
                             transform: `translateX(${(this.blocksContainer.current.offsetWidth / this.state.numOfBlocks) * (mark)}px)`,
-                            backgroundColor: '#f1f2f3',
-                            transition: `${(this.state.scanSpeed) / 1000}s ease-in-out`
+                            backgroundColor: '#cccccc',
+                            transition: `${(this.state.scanSpeed) / 1000}s ease-in-out`,
+                            boxShadow: `0 5px 25px rgb(0 0 0 / 20%)`
                           }
                         }
                       />
