@@ -1,0 +1,24 @@
+.block-container, .box-container {
+    height: 100px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 0.5px;
+}
+
+.block-container, .bottom-block-container {
+    height: 100px;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    position: absolute;
+  }

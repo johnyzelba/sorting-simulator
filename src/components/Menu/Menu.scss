@@ -1,0 +1,223 @@
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100vw - 60px);
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 8px 30px;
+
+    h2 {
+        border-radius: 3px;
+        padding: 3px 12px;
+        border: none;
+        font-size: 14px;
+        box-shadow: 0 0px 0px 3px #777777;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        position: relative;
+        overflow: hidden;
+        color: #4b4b4b;
+        width: 118px;
+        height: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 13px;
+            left: 0;
+            width: 148px;
+            height: 50px;
+            background-color: #24adc99d;
+            transform: rotate(-8.5deg);
+            z-index: 0;
+        }
+
+        &::after {
+            position: absolute;
+            top: 4px;
+            left: 13px;
+            content: "Sorting Simulator";
+            font-size: 14px;
+            z-index: 1;
+        }
+    }
+
+    .box-container {
+        position: relative;
+        width: 200px;
+        height: 32px;
+    }
+
+    .box {
+        position: relative;
+    }
+
+    .box select {
+        background-color: #24adc9;
+        color: white;
+        padding: 8px 12px;
+        width: 200px;
+        border: none;
+        font-size: 14px;
+        box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        border-radius: 4px;
+        transition: all .3s ease-in-out;
+    }
+
+    .box select:disabled {
+        background-color: #adadad !important;
+    }
+
+    .buttons-container {
+        display: flex;
+    }
+
+    button {
+        background-color: #24adc9;
+        color: rgba(255, 255, 255, 0.795);
+        border: none;
+        font-size: 14px;
+        box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        border-radius: 4px;
+        height: 32px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        position: relative;
+
+        &:disabled {
+            background-color: #adadad !important;
+
+            cursor: default !important;
+        }
+
+        div {
+            padding: 8px 12px;
+            height: 16px;
+            font-size: 14px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 146px;
+        }
+    }
+
+    .start-button {
+        margin-right: 4px;
+        width: 160px;
+    }
+
+    .stop-button {
+        margin-right: 4px;
+        width: 160px;
+        background-color: #ca3e49;
+    }
+
+    .refresh-button {
+        padding: 0px 12px;
+    }
+
+    .box::before,
+    .box:disabled:before {
+        content: "\f150";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.795);
+        background-color: rgba(255, 255, 255, 0.1);
+        pointer-events: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box:hover::before {
+        color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .box select option {
+        padding: 30px;
+    }
+
+    .box select::-ms-expand {
+        display: none;
+        /* Remove default arrow in Internet Explorer 10 and 11 */
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    h2 {
+        padding: 3px 12px !important;
+        font-size: 10px !important;
+        width: 102px !important;
+        height: 16px !important;
+
+        &::before {
+            top: 8px !important;
+            left: 0 !important;
+            width: 148px !important;
+            height: 46px !important;
+        }
+
+        &::after {
+            top: 1px !important;
+            left: 4px !important;
+            font-size: 14px !important;
+        }
+    }
+
+    .box-container {
+        width: 125px !important;
+        height: 28px !important;
+    }
+
+    .box select {
+        padding: 8px 12px !important;
+        width: 125px !important;
+        font-size: 11px !important;
+    }
+
+    .box:before {
+        font-size: 12px !important;
+    }
+
+    button {
+        font-size: 10px !important;
+        height: 28px !important;
+
+        div {
+            padding: 7px 10px !important;
+            height: 16px !important;
+            width: 106px !important;
+            font-size: 12px !important;
+        }
+    }
+
+    .start-button {
+        margin-right: 4px !important;
+        width: 120px !important;
+    }
+
+    .stop-button {
+        margin-right: 4px !important;
+        width: 120px !important;
+    }
+}
